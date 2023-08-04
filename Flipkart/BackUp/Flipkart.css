@@ -1,0 +1,497 @@
+/* BASIC start */
+body {
+    font-family: Arial;
+    background-color: white
+}
+
+* {
+    margin: 0;
+}
+
+/* BASIC end */
+
+/* TOP BAR start */
+
+
+.top {
+    background-color: #2376e2;
+    color: white;
+    border: 0px;
+
+    height: 57px;
+    font-size: 20px;
+
+
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    box-shadow: 0px 2px 4px darkgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+#LoginButton {
+    box-shadow: none;
+    font-size: 15px;
+    font-weight: 590;
+    width: 120px;
+    margin-left: 45px;
+    background-color: white;
+    color: #2376e2;
+    /* #2376e2 */
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+#CartButton {
+    box-shadow: none;
+    font-size: 17px;
+    margin-left: 40px;
+    text-align: center;
+    height: 50px;
+}
+
+#SellerButton {
+    box-shadow: none;
+    font-size: 17px;
+    margin-left: 35px;
+    text-align: center;
+    height: 50px;
+}
+
+#MoreButton {
+    font-size: 17px;
+    margin-left: 40px;
+    cursor: pointer;
+
+}
+
+#MoreContainer:hover+#DropDownArrow {
+    transform: rotateZ(180deg);
+}
+
+#DropDownArrow:hover {
+    transform: rotateZ(180deg);
+}
+
+
+#SearchBox {
+    width: 630px;
+    height: 33px;
+    margin-left: 15px;
+    padding-left: 10px;
+
+    position: relative;
+}
+
+.FFplus {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+#CartIcon {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+#DropDownArrow {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    margin-left: 2px;
+    height: 13px;
+    cursor: pointer;
+
+    transition-property: transform;
+    transition-duration: 0.12s;
+}
+
+
+#SearchButton {
+    height: 35px;
+    justify-content: center;
+    padding-top: 5px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -60px;
+}
+
+#SearchButtonIcon {
+    -webkit-filter: none;
+    filter: invert(60%) sepia(69%) saturate(6872%) hue-rotate(201deg) brightness(84%) contrast(98%);
+    height: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#Plus:hover {
+    text-decoration: underline;
+}
+
+/* TOP BAR end */
+
+/* CATEGORIES BAR end */
+
+#Categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    scale: 83%;
+}
+
+.Grocery,
+.Mobiles,
+.Fashion,
+.Electronics,
+.Furniture,
+.Appliances,
+.Travel,
+.TopOffers,
+.Toys,
+.Vehicles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-weight: bold;
+    color: black;
+}
+
+.Furniture,
+.Appliances,
+.Travel {
+    margin-top: -2px;
+}
+
+/* CATEGORIES BAR end */
+
+
+/* BANNER start */
+
+.slider {
+    border-top: 16px solid rgb(226, 226, 226);
+    border-left: 8px solid rgb(226, 226, 226);
+    border-right: 8px solid rgb(226, 226, 226);
+    border-bottom: 9px solid rgb(226, 226, 226);
+    border-style: solid;
+    max-width: 100vw;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.list {
+    /*     margin-top: 20px; */
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.list img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.buttons {
+    position: absolute;
+    top:
+        /* 101px */
+        35.4%;
+    left: 0px;
+    width:
+        /* 1504px */
+        99.99%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    height: 85px;
+    width: 43px;
+    border: none;
+}
+
+#prev {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#next {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* BANNER end */
+
+
+
+/* SUGGESTIONS start */
+
+
+.Container1 {
+    display: flex;
+    max-width: 100vw;
+    height: 340px;
+    flex-direction: row;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+
+.Badge1 {
+    border: 10px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+
+    height: 340px;
+    width: 250px;
+    background-repeat: no-repeat;
+
+    background-position: left;
+    background-size: 121%;
+    background-position-y: 100%;
+
+}
+
+#SeeAll {
+    background-color: #2376e2;
+
+    box-shadow: 0px 2px 5px rgb(171, 171, 171);
+    height: 40px;
+    width: 100px;
+    position: relative;
+
+    top: 100px;
+    left: 75px;
+    border: none;
+    border-radius: 3px;
+
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+#DescriptionBadge1 {
+    position: relative;
+    top: 10%;
+    left: 15%;
+    font-size: 30px;
+    text-align: center;
+    max-width: 150px;
+}
+
+
+.SliderBadge1 {
+    border: 10px;
+    border-left: 0px;
+    border-right: 10px;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    height: 340px;
+    width: 82.5%;
+
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+
+.Element1 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 60px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+}
+
+.Badgeimg {
+    scale: 90%;
+    transition: 0.2s;
+}
+
+
+.Element1:hover .Badgeimg {
+    transform: scale(1.08);
+}
+
+.Element1 .Discount,
+.More {
+    margin-top: 10px;
+}
+
+.ProductName {
+    margin-top: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.Discount {
+    font-size: 19px;
+    color: rgb(0, 157, 0);
+    white-space: nowrap;
+}
+
+.More {
+    color: rgb(188, 188, 188);
+    white-space: nowrap;
+}
+
+
+
+.ButtonBadge1 {
+    position: absolute;
+    top:
+        /* 101px */
+        35.4%;
+    left: 17%;
+    width:
+        /* 1504px */
+        82.4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ButtonBadge1 img {
+    height: 50px;
+    margin-left: -8px;
+    margin-top: 3px;
+}
+
+.ButtonBadge1 button {
+    height: 95px;
+    width: 50px;
+    border: none;
+
+    cursor: pointer;
+}
+
+#B1prev {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+#B1next {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+/* SUGGESTIONS end */
+
+
+/* FOOTER start */
+
+.End {
+    background-color: #172337;
+    border: 10px solid #172337;
+    display: flex;
+    flex-direction: row;
+    padding-left: 70px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    border-bottom: 0.01em solid rgb(84, 84, 84);
+}
+
+.FContainer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 90px;
+}
+
+.FHeading {
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+
+
+
+.FElements {
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+}
+#FSocial{
+    padding-right: 180px;
+}
+
+.FContainer2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+#FC1{
+    padding-left: 30px;
+    border-left: 1px inset rgb(165, 165, 165);
+    height: 130px;
+}
+
+.FElements2 {
+    color: white;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+
+.FContainerB{
+    background-color: #172337;
+}
+
+
+.FLContainer{
+    background-color: #172337;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: 900px;
+    align-items: center;
+}
+
+.FLCElement{
+    color: white;
+    padding-left: 95px;
+}
+
+.FLCElement img{
+    height: 12px;
+    padding-right: 8px;
+}
+
+.FLCElement a{
+    color: white;
+}
